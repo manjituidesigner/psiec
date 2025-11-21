@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Management System - EMS</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex align-items-center justify-content-between">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/header-logo.png" alt="PSIEC Logo" class="logo" height="60"
+                 data-default-src="assets/header-logo.png" data-sticky-src="assets/header-logo-dark.png" />
+          </a>
+          <div class="header-tools d-flex align-items-center gap-2">
+            <button id="screen-reader" class="btn btn-access">
+              <span class="d-none d-md-inline">Screen Reader Access</span>
+              <i class="fas fa-universal-access d-inline d-md-none" aria-hidden="true"></i>
+            </button>
+            <div class="font-size-controls btn-group" role="group" aria-label="Font size controls">
+              <button id="font-dec" class="btn btn-fs" aria-label="Decrease font size">A-</button>
+              <button id="font-reset" class="btn btn-fs" aria-label="Reset font size">A</button>
+              <button id="font-inc" class="btn btn-fs" aria-label="Increase font size">A+</button>
+            </div>
+            <button id="theme-toggle" class="btn btn-fs btn-theme" aria-label="Toggle theme">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero-section position-relative overflow-hidden" id="home">
+      <div class="slider-container">
+        <div class="slide active" style="background-image:url('assets/hero-slide-1.jpg');"></div>
+        <div class="slide" style="background-image:url('assets/hero-slide-2.jpg');"></div>
+        <div class="slide" style="background-image:url('assets/hero-slide-3.jpg');"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Slider arrows -->
+        <button class="slider-nav slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-nav slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="container position-relative h-100">
+          <div class="row h-100 align-items-center">
+            <!-- Left: Text -->
+            <div class="col-lg-6 col-12 hero-text text-white">
+              <h1 class="display-5 fw-bold mb-3 mt-5 mt-md-0 reveal-up reveal-delay-1">Estate Management<br/>System <span class="accent">(EMS)</span></h1>
+              <p class="lead mb-0 reveal-up reveal-delay-2">The Estate Management System (EMS) is a robust, web-based platform developed by<b> NIC Punjab for PSIEC </b> to streamline and digitize all post-allotment services for Industrial Focal Points. </p>
+            </div>
+
+            <!-- Right: Buttons Box -->
+            <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-self-start align-self-lg-auto mt-0 mt-md-5 mt-lg-0">
+              <div class="action-panel">
+                <button class="action-btn btn-blue reveal-up"><i class="fas fa-briefcase"></i><span>Allottee Login</span><i class="fas fa-arrow-right"></i></button>
+                <button class="action-btn btn-orange reveal-up reveal-delay-1"><i class="fas fa-user"></i><span>Employee Login</span><i class="fas fa-arrow-right"></i></button>
+                <button class="action-btn btn-purple reveal-up reveal-delay-2"><i class="fas fa-user-plus"></i><span>Allottee Registration</span><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About EMS Section -->
+    <section class="about-section py-5" id="about">
+      <div class="watermark">ESTATE MANAGEMENT SYSTEM</div>
+      <div class="container">
+        <div class="text-center mb-4">
+          <h3 class="about-heading">About EMS</h3>
+        </div>
+        <p class="about-text mx-auto text-center">
+          The Estate Management System (EMS) is a robust, web-based platform developed by NIC Punjab for PSIEC to streamline and digitize all post-allotment services for Industrial Focal Points. Designed with a focus on convenience, transparency, and efficiency, EMS empowers allottees with a comprehensive suite of online services that are accessible anytime, from anywhere. Through EMS, allottees can seamlessly apply for various post-allotment services, manage all their PSIEC plots from a unified dashboard, monitor dues, receive real-time notifications, and make secure online payments. The platform also facilitates e-payment of water and sewerage bills and provides live tracking of service request statuses. Additionally, EMS enables PSIEC to issue official communications and updates directly to allottees, ensuring smooth and timely interactions. Whether managing a single plot or multiple properties, EMS brings simplicity, control, and digital transformation to industrial estate management across Punjab.
+        </p>
+
+        <!-- Features -->
+        <div class="row g-4 mt-1" id="features">
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <h5 class="feature-title">VISION OF PSIEC</h5>
+              <div class="feature-image">
+                <img src="assets/vision.jpg" class="img-fluid" alt="Vision of PSIEC" />
+              </div>
+              <div class="feature-content scrollable">
+                <p>Our vision is to build world-class industrial infrastructure that fuels entrepreneurship and drives comprehensive economic growth across Punjab. PSIEC is committed to empowering industries with seamless access to essential resources, fostering innovation and competitiveness to support a thriving business ecosystem, and promoting Punjab’s rich cultural heritage by supporting local handicrafts and traditional arts on a global stage. We also strive to ensure the affordable and reliable supply of critical industrial inputs, strengthening the state’s industrial landscape. Through these concerted efforts, PSIEC envisions a vibrant, self-reliant, and globally connected industrial Punjab.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <h5 class="feature-title">E-AUCTION</h5>
+              <div class="feature-image">
+                <img src="assets/e-auction.jpg" class="img-fluid" alt="E-Auction" />
+              </div>
+              <div class="feature-content scrollable">
+                <p>All interested bidders must register and enroll through the official portal: <a href="https://www.pbindustries.gov.in" target="_blank" style="color: #0066CC;">www.pbindustries.gov.in</a>.</p>
+
+<p>Bidders are strongly advised to ensure a stable high-speed internet connection while participating in the e-auction. PSIEC shall not be held responsible for any disruptions or connectivity issues on the bidder's end.</p>
+
+<p>Any corrigendum, updates, or announcements related to the listed properties — including e-auction extensions — will be published exclusively on <a href="https://psiec.punjab.gov.in" target="_blank" style="color: #0066CC;">www.psiec.punjab.gov.in</a>. Bidders are advised to check the website regularly for the latest information.</p>
+
+<p>Corner plots are indicated by the symbol (P) in the property listing table. Please note that an additional 10% charge will be applicable for corner plots.</p>
+
+<p>Complete details regarding available plots — including sizes, dimensions, layout plans, reserve prices, as well as the e-auction help manual, eligibility criteria, Earnest Money Deposit (EMD) requirements, and full terms & conditions — can be accessed at <a href="https://psiec.punjab.gov.in" target="_blank" style="color: #0066CC;">www.psiec.punjab.gov.in</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <h5 class="feature-title">Focal Points Layout Plans</h5>
+              <div class="feature-image">
+                 <img src="assets/Focal-Points.jpg" class="img-fluid" alt="Focal Points Layout Plans" />
+                </div>
+              <div class="feature-content scrollable">
+                <ul class="focal-points-list">
+                  <li>ABOHAR</li>
+                  <li>AMRITSAR EXPANSION</li>
+                  <li>AMRITSAR NEW</li>
+                  <li>AMRITSAR OLD</li>
+                  <li>BATALA</li>
+                  <li>BATHINDA NEW</li>
+                  <li>BATHINDA OLD</li>
+                  <li>CHANALON</li>
+                  <li>DERA BASSI</li>
+                  <li>GOINDWAL SAHIB PHASE I</li>
+                  <li>GOINDWAL SAHIB PHASE II INDUSTRIAL</li>
+                  <li>GOINDWAL SAHIB</li>
+                  <li>IGC BHATINDA</li>
+                  <li>JALANDHAR EXPANSION</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides/Manuals Section -->
+    <section class="guides-section py-5" id="guides">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="guide-card reveal-up">
+              <h5 class="guide-title">Registration Manual/Video</h5>
+              <p class="guide-subtitle mb-3">Registration Video</p>
+              <a class="guide-video" href="#" aria-label="Play Registration Video">
+                <img src="assets/registraiton-video.png" class="img-fluid" alt="Registration video thumbnail" />
+                <span class="play-icon"><i class="fas fa-play"></i></span>
+              </a>
+              <a class="guide-btn" href="#" download>
+                <span>Registration Manual Download</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="guide-card reveal-up reveal-delay-1">
+              <h5 class="guide-title">Online Payment Procedure</h5>
+              <p class="guide-subtitle mb-3">Payment Procedure Video</p>
+              <a class="guide-video" href="#" aria-label="Play Payment Procedure Video">
+                <img src="assets/online-payment-video.png" class="img-fluid" alt="Payment procedure video thumbnail" />
+                <span class="play-icon"><i class="fas fa-play"></i></span>
+              </a>
+              <a class="guide-btn" href="#" download>
+                <span>Payment Procedure Manual Download</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+  <footer class="footer-section">
+      <div class="footer-main py-5">
+        <div class="container">
+          <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4 footer-top">
+            <div class="footer-logo d-flex align-items-center gap-3">
+              <img src="assets/header-logo.png" alt="PSIEC Logo" height="50" />
+            </div>
+            <div class="newsletter-signup d-flex align-items-center gap-3">
+              <h5 class="mb-0">Signup For Newsletter</h5>
+              <form class="newsletter-form" onsubmit="return false;">
+                <input type="email" class="form-control" placeholder="Enter Your Email" required />
+                <button type="submit" class="btn btn-subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-4 footer-info-grid">
+            <div class="col-md-3">
+              <div class="footer-info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h6>OUR MAIN OFFICE</h6>
+                <p>18-Himalya Marg, Udyog Bhawan, Sector 17A, Chandigarh - 160017</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-info-card">
+                <i class="fas fa-phone"></i>
+                <h6>PHONE NUMBER</h6>
+                <p>0172-2702301-305</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-info-card">
+                <i class="fas fa-headset"></i>
+                <h6>HELPLINE NUMBER</h6>
+                <p>+91-6284999031-32</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-info-card no-border">
+                <i class="fas fa-envelope"></i>
+                <h6>EMAIL</h6>
+                <p>helpdesk.estatepsiec@punjab.gov.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright py-3">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
+          <p class="mb-0">&copy; Copyright PSIEC - 2025. All Rights Reserved</p>
+          <p class="mb-0">Designed and Developed by NIC PUNJAB</p>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    (function() {
+      const btn = document.getElementById('backToTop');
+      const showAfter = 200; // px
+      function onScroll() {
+        if (window.pageYOffset > showAfter) {
+          btn.classList.add('show');
+        } else {
+          btn.classList.remove('show');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      onScroll();
+    })();
+    // Sticky header: toggle class and swap logo on scroll
+    (function() {
+      const header = document.querySelector('.header');
+      const logo = document.querySelector('.header .logo');
+      if (!header || !logo) return;
+      const defaultSrc = logo.getAttribute('data-default-src') || logo.src;
+      const stickySrc = logo.getAttribute('data-sticky-src') || defaultSrc;
+      function updateHeader() {
+        if (window.pageYOffset > 10) {
+          header.classList.add('is-sticky');
+          if (logo.src !== stickySrc) logo.src = stickySrc;
+        } else {
+          header.classList.remove('is-sticky');
+          if (logo.src !== defaultSrc) logo.src = defaultSrc;
+        }
+      }
+      window.addEventListener('scroll', updateHeader, { passive: true });
+      updateHeader();
+    })();
+
+    // Theme toggle (light/dark) with persistence and logo swap
+    (function() {
+      const btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      const icon = btn.querySelector('i');
+      const body = document.body;
+      const header = document.querySelector('.header');
+      const logo = document.querySelector('.header .logo');
+      const defaultSrc = logo ? (logo.getAttribute('data-default-src') || logo.src) : '';
+      const stickySrc = logo ? (logo.getAttribute('data-sticky-src') || defaultSrc) : '';
+
+      function setIcon(dark) {
+        icon.classList.toggle('fa-moon', !dark);
+        icon.classList.toggle('fa-sun', dark);
+      }
+      function applyLogo(dark) {
+        if (!logo) return;
+        if (dark) {
+          // Always use dark logo in dark theme
+          if (logo.src !== stickySrc) logo.src = stickySrc;
+        } else {
+          // In light theme, choose based on scroll position
+          const scrolled = window.pageYOffset > 10;
+          const desired = scrolled ? stickySrc : defaultSrc;
+          if (logo.src !== desired) logo.src = desired;
+        }
+      }
+      function applyTheme(dark) {
+        body.classList.toggle('theme-dark', dark);
+        try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+        setIcon(dark);
+        applyLogo(dark);
+      }
+      // Initialize from localStorage
+      let dark = false;
+      try { dark = localStorage.getItem('theme') === 'dark'; } catch (e) { dark = false; }
+      applyTheme(dark);
+      // Update logo on scroll in light theme
+      window.addEventListener('scroll', function() {
+        if (!document.body.classList.contains('theme-dark')) applyLogo(false);
+      }, { passive: true });
+      btn.addEventListener('click', function() {
+        dark = !document.body.classList.contains('theme-dark');
+        applyTheme(dark);
+      });
+    })();
+  </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

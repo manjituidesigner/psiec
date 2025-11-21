@@ -1,0 +1,222 @@
+// ============================================
+// SCSS VARIABLES - ESTATE MANAGEMENT SYSTEM
+// ============================================
+
+// ============================================
+// COLOR VARIABLES
+// ============================================
+
+// Primary Colors
+$primary-dark: #062452;
+$primary-dark-opacity: rgba(6, 36, 82, 0.77);
+$primary-blue: #0066CC;
+$primary-light: #D6DFEB;
+$primary-light2: #cad4e1;
+
+// Secondary Colors
+$secondary-orange: #FF9500;
+$secondary-purple: #7C3AED;
+$secondary-pink: #EC4899;
+$secondary-gold: #89e995;
+
+// Neutral Colors
+$red: #ff0000;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-dark-gray: #2D2E30;
+$color-light-gray: #F5F5F5;
+$color-border: #5F6D77;
+$color-border-opacity: rgba(95, 109, 119, 0.49);
+$header-color:#0f2652;
+$overlay-opacity1:rgb(1 12 28 / 77%);
+$text-heading2: #053E94;
+
+// Text Colors
+$text-primary: $color-dark-gray;
+$text-secondary: #666666;
+$text-light: $color-white;
+$text-heading: $text-heading2;
+
+// Background Colors
+$bg-primary: $primary-dark;
+$bg-secondary: $primary-light;
+$bg-dark: $primary-dark;
+$bg-light: $color-light-gray;
+
+// ============================================
+// TYPOGRAPHY VARIABLES
+// ============================================
+
+// Font Families
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-mono: 'Open Sans', monospace;
+
+// Font Sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 28px;
+$font-size-4xl: 32px;
+$font-size-5xl: 40px;
+$font-size-6xl: 48px;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Line Heights
+$line-height-tight: 1.2;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+$line-height-loose: 2;
+
+// Letter Spacing
+$letter-spacing-tight: -0.5px;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.5px;
+$letter-spacing-wider: 1px;
+
+// ============================================
+// SPACING VARIABLES
+// ============================================
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 24px;
+$spacing-2xl: 32px;
+$spacing-3xl: 48px;
+$spacing-4xl: 64px;
+$spacing-5xl: 80px;
+
+// ============================================
+// BORDER RADIUS VARIABLES
+// ============================================
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-2xl: 24px;
+$border-radius-full: 9999px;
+
+// ============================================
+// SHADOW VARIABLES
+// ============================================
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+$shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.25);
+
+// ============================================
+// TRANSITION VARIABLES
+// ============================================
+
+$transition-fast: 150ms ease-in-out;
+$transition-base: 250ms ease-in-out;
+$transition-slow: 350ms ease-in-out;
+
+// ============================================
+// BREAKPOINTS
+// ============================================
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-2xl: 1400px;
+
+// ============================================
+// Z-INDEX VARIABLES
+// ============================================
+
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// ============================================
+// BUTTON VARIABLES
+// ============================================
+
+$btn-padding-y: $spacing-lg;
+$btn-padding-x: $spacing-xl;
+$btn-font-size: $font-size-base;
+$btn-font-weight: $font-weight-semibold;
+$btn-border-radius: $border-radius-full;
+$btn-transition: all $transition-base;
+
+// ============================================
+// CARD VARIABLES
+// ============================================
+
+$card-padding: $spacing-2xl;
+$card-border-radius: $border-radius-lg;
+$card-shadow: $shadow-md;
+$card-bg: $color-white;
+$card-border-color: #E5E7EB;
+
+// ============================================
+// INPUT VARIABLES
+// ============================================
+
+$input-padding-y: $spacing-md;
+$input-padding-x: $spacing-lg;
+$input-font-size: $font-size-base;
+$input-border-radius: $border-radius-md;
+$input-border-color: #D1D5DB;
+$input-focus-border-color: $primary-blue;
+$input-focus-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+
+// ============================================
+// HEADER VARIABLES
+// ============================================
+
+$header-bg: $color-white;
+$header-height: 80px;
+$header-shadow: $shadow-md;
+$header-text-color: $text-primary;
+
+// ============================================
+// HERO SECTION VARIABLES
+// ============================================
+
+$hero-height: 600px;
+$hero-overlay-color: $overlay-opacity1;
+$hero-text-color: $color-white;
+
+// ============================================
+// FOOTER VARIABLES
+// ============================================
+
+$footer-bg: $primary-dark;
+$footer-text-color: $color-white;
+$footer-padding: $spacing-3xl;
+$footer-copyright-bg: $color-black;
+$footer-copyright-padding: $spacing-lg;
+
+// ============================================
+// ALIAS VARIABLES
+// ============================================
+
+$bgcolor1: $bg-primary;
+$textcolor: $text-primary;
+$bgcolor3: $bg-secondary;
+$h2color: $text-heading;
+$mybg: $secondary-gold;
+$stcikyheader: $header-color;
