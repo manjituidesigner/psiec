@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estate Management System - EMS !!!-222</title>
+    <title>Estate Management System - EMS </title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -45,29 +46,234 @@
     <!-- Hero Section with Slider -->
     <section class="hero-section position-relative overflow-hidden" id="home">
       <div class="slider-container">
-        <div class="slide active" style="background-image:url('assets/hero-slide-1.jpg');"></div>
-        <div class="slide" style="background-image:url('assets/hero-slide-2.jpg');"></div>
-        <div class="slide" style="background-image:url('assets/hero-slide-3.jpg');"></div>
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/psiec%20-%20video.mp4" type="video/mp4" />
+        </video>
         <div class="hero-overlay"></div>
-
-        <!-- Slider arrows -->
-        <button class="slider-nav slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
-        <button class="slider-nav slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
 
         <div class="container position-relative h-100">
           <div class="row h-100 align-items-center">
             <!-- Left: Text -->
-            <div class="col-lg-6 col-12 hero-text text-white">
-              <h1 class="display-5 fw-bold mb-3 mt-5 mt-md-0 reveal-up reveal-delay-1">Estate Management<br/>System <span class="accent">(EMS)</span></h1>
-              <p class="lead mb-0 reveal-up reveal-delay-2">The Estate Management System (EMS) is a robust, web-based platform developed by<b> NIC Punjab for PSIEC </b> to streamline and digitize all post-allotment services for Industrial Focal Points. </p>
+            <div class="col-lg-8 col-12 hero-text text-white">
+              <h1 class="hero-title mb-3 mt-5 mt-md-0 reveal-up reveal-delay-1">The Estate Management System </h1>
+              <p class="hero-subtitle mb-4 reveal-up reveal-delay-2">A robust, web-based platform developed by <b>NIC Punjab for PSIEC</b> to streamline and digitize post-allotment services for Industrial Focal Points.</p>
+              <a href="#" class="hero-cta reveal-up reveal-delay-3">Allottee Login</a>
             </div>
 
-            <!-- Right: Buttons Box -->
-            <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-self-start align-self-lg-auto mt-0 mt-md-5 mt-lg-0">
-              <div class="action-panel">
-                <button class="action-btn btn-blue reveal-up"><i class="fas fa-briefcase"></i><span>Allottee Login</span><i class="fas fa-arrow-right"></i></button>
-                <button class="action-btn btn-orange reveal-up reveal-delay-1"><i class="fas fa-user"></i><span>Employee Login</span><i class="fas fa-arrow-right"></i></button>
-                <button class="action-btn btn-purple reveal-up reveal-delay-2"><i class="fas fa-user-plus"></i><span>Allottee Registration</span><i class="fas fa-arrow-right"></i></button>
+            <div class="col-lg-1 d-none d-lg-flex justify-content-center">
+              <div class="hero-divider" aria-hidden="true"></div>
+            </div>
+
+            <!-- Right: Profiles -->
+            <div class="col-lg-2 col-12 d-none d-lg-flex justify-content-end">
+              <div class="hero-profiles" aria-label="Key profiles">
+                <div class="hero-profile">
+                  <img class="hero-profile-img" src="assets/profile-1.jpg" alt="Profile" />
+                  <div class="hero-profile-meta">
+                    <div class="hero-profile-name">Sh. Example Name</div>
+                    <div class="hero-profile-role">Hon’ble Designation</div>
+                  </div>
+                </div>
+                <div class="hero-profile">
+                  <img class="hero-profile-img" src="assets/profile-2.jpg" alt="Profile" />
+                  <div class="hero-profile-meta">
+                    <div class="hero-profile-name">Example Name</div>
+                    <div class="hero-profile-role">Designation</div>
+                  </div>
+                </div>
+                <div class="hero-profile">
+                  <img class="hero-profile-img" src="assets/profile-3.jpg" alt="Profile" />
+                  <div class="hero-profile-meta">
+                    <div class="hero-profile-name">Example Name</div>
+                    <div class="hero-profile-role">Designation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker-section" id="highlights">
+      <div class="container">
+        <div class="ticker-wrap">
+          <div class="ticker-static">
+            <a class="ticker-card" href="#">
+              <img class="ticker-avatar" src="assets/plot-01.png" alt="Profile" />
+              <div class="ticker-meta">
+                <div class="ticker-name">Flatted <br> Factory</div>
+                <!-- <div class="ticker-role">Designation</div>
+                <div class="ticker-loc">Punjab, India</div> -->
+              </div>
+            </a>
+            <a class="ticker-card" href="#">
+              <img class="ticker-avatar" src="assets/hero-slide-3.jpg" alt="Profile" />
+              <div class="ticker-meta">
+                <div class="ticker-name">Direct Land </div>
+                <!-- <div class="ticker-role">Allottee</div>
+                <div class="ticker-loc">Ludhiana, Punjab</div> -->
+              </div>
+            </a>
+            <a class="ticker-card" href="#">
+              <img class="ticker-avatar" src="assets/hero-slide-2.jpg" alt="Profile" />
+              <div class="ticker-meta">
+                <div class="ticker-name">E-Auction</div>
+             
+              </div>
+            </a>
+          </div>
+
+          <!--
+          <div class="ticker-track">
+            <div class="ticker-group">
+              <a class="ticker-card" href="#">
+                <img class="ticker-avatar" src="assets/header-logo.png" alt="Profile" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Sh. Example Name</div>
+                  <div class="ticker-role">Designation</div>
+                  <div class="ticker-loc">Punjab, India</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#">
+                <img class="ticker-avatar" src="assets/vision.jpg" alt="Profile" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Allottee</div>
+                  <div class="ticker-loc">Ludhiana, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#">
+                <img class="ticker-avatar" src="assets/e-auction.jpg" alt="Profile" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Investor</div>
+                  <div class="ticker-loc">Amritsar, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#">
+                <img class="ticker-avatar" src="assets/Focal-Points.jpg" alt="Profile" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Entrepreneur</div>
+                  <div class="ticker-loc">Mohali, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#">
+                <img class="ticker-avatar" src="assets/header-logo.png" alt="Profile" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Industrialist</div>
+                  <div class="ticker-loc">Jalandhar, Punjab</div>
+                </div>
+              </a>
+            </div>
+            <div class="ticker-group" aria-hidden="true">
+              <a class="ticker-card" href="#" tabindex="-1">
+                <img class="ticker-avatar" src="assets/header-logo.png" alt="" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Sh. Example Name</div>
+                  <div class="ticker-role">Designation</div>
+                  <div class="ticker-loc">Punjab, India</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#" tabindex="-1">
+                <img class="ticker-avatar" src="assets/vision.jpg" alt="" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Allottee</div>
+                  <div class="ticker-loc">Ludhiana, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#" tabindex="-1">
+                <img class="ticker-avatar" src="assets/e-auction.jpg" alt="" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Investor</div>
+                  <div class="ticker-loc">Amritsar, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#" tabindex="-1">
+                <img class="ticker-avatar" src="assets/Focal-Points.jpg" alt="" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Entrepreneur</div>
+                  <div class="ticker-loc">Mohali, Punjab</div>
+                </div>
+              </a>
+              <a class="ticker-card" href="#" tabindex="-1">
+                <img class="ticker-avatar" src="assets/header-logo.png" alt="" />
+                <div class="ticker-meta">
+                  <div class="ticker-name">Example Name</div>
+                  <div class="ticker-role">Industrialist</div>
+                  <div class="ticker-loc">Jalandhar, Punjab</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about-industrie" id="about-industrie">
+      <div class="container">
+        <div class="about-industrie-wrap_cls">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="about-industrie-media">
+                <img src="assets/hero-slide-2.jpg" alt="About" class="about-industrie-img" />
+                <div class="about-industrie-stat" aria-label="Highlights">
+                  <div class="about-industrie-stat-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+                  <div class="about-industrie-stat-num">460+</div>
+                  <div class="about-industrie-stat-text">Highly Specialised Employees</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="about-industrie-content">
+                <!-- <div class="about-industrie-kicker">
+                  <span class="about-industrie-dot" aria-hidden="true"></span>
+                  <span>ABOUT INDUSTRIE</span>
+                </div> -->
+
+                <h2 class="about-industrie-title">Punjab Small Industries & Export Corporation limited  <span class="about-industrie-accent">was setup in 1962</span><br /></h2>
+
+                <p class="about-industrie-desc">with the objective of supporting the individual in his endeavor to set up his own industrial unit. And help him and the small-scale industry to grow in Punjab.</p>
+
+                <div class="about-industrie-tabs" role="tablist" aria-label="About tabs">
+                  <button class="about-industrie-tab active" type="button" role="tab" aria-selected="true" data-about-tab="history">About Us</button>
+                  <button class="about-industrie-tab" type="button" role="tab" aria-selected="false" data-about-tab="mission">Formation & Vision</button>
+                  
+                </div>
+
+                <div class="about-industrie-panels">
+                  <div class="about-industrie-panel active" role="tabpanel" data-about-panel="history">
+                    <p>The Estate Management System (EMS) is a robust, web-based platform developed by NIC Punjab for 
+                      PSIEC to streamline and digitize all post-allotment services for Industrial Focal Points. 
+                      Designed with a focus on convenience, transparency, and efficiency, EMS empowers allottees 
+                      with a comprehensive suite of online services that are accessible anytime, from anywhere. 
+                      Through EMS, allottees can seamlessly apply for various post-allotment services, manage all 
+                      their PSIEC plots from a unified dashboard, monitor dues, receive real-time notifications, 
+                      and make secure online payments. The platform also facilitates e-payment of water and sewerage 
+                      bills and provides live tracking of service request statuses. Additionally, EMS enables PSIEC to 
+                      issue official communications and updates directly to allottees, ensuring smooth and timely interactions. 
+                      Whether managing a single plot or multiple properties, EMS brings simplicity, control, and digital 
+                      transformation to industrial estate management across Punjab.</p>
+                    <!-- <div class="about-industrie-checks">
+                      <div class="about-industrie-check"><i class="fa-regular fa-circle-check" aria-hidden="true"></i><span>Quality Control System</span></div>
+                      <div class="about-industrie-check"><i class="fa-regular fa-circle-check" aria-hidden="true"></i><span>Building Quality Industrial</span></div>
+                    </div> -->
+                  </div>
+
+                  <div class="about-industrie-panel" role="tabpanel" data-about-panel="mission">
+                    <p>To create world class industrial infrastructure promoting entrepreneurship encouraging all round economic prosperity in the Sate. To promote handicrafts and local arts to showcase the culture of Punjab in the world. To ensure smooth and affordable supply of critical inputs to the industry of Punjab and build competitive advantage.</p>
+                    
+                  </div>
+
+                  
+                </div>
               </div>
             </div>
           </div>
@@ -77,15 +283,9 @@
 
     <!-- About EMS Section -->
     <section class="about-section py-5" id="about">
-      <div class="watermark">ESTATE MANAGEMENT SYSTEM</div>
+     
       <div class="container">
-        <div class="text-center mb-4">
-          <h3 class="about-heading">About EMS</h3>
-        </div>
-        <p class="about-text mx-auto text-center">
-          The Estate Management System (EMS) is a robust, web-based platform developed by NIC Punjab for PSIEC to streamline and digitize all post-allotment services for Industrial Focal Points. Designed with a focus on convenience, transparency, and efficiency, EMS empowers allottees with a comprehensive suite of online services that are accessible anytime, from anywhere. Through EMS, allottees can seamlessly apply for various post-allotment services, manage all their PSIEC plots from a unified dashboard, monitor dues, receive real-time notifications, and make secure online payments. The platform also facilitates e-payment of water and sewerage bills and provides live tracking of service request statuses. Additionally, EMS enables PSIEC to issue official communications and updates directly to allottees, ensuring smooth and timely interactions. Whether managing a single plot or multiple properties, EMS brings simplicity, control, and digital transformation to industrial estate management across Punjab.
-        </p>
-
+       
         <!-- Features -->
         <div class="row g-4 mt-1" id="features">
           <div class="col-lg-4">
@@ -150,36 +350,95 @@
       </div>
     </section>
 
+    <section class="whatwedo-section" id="what-we-do">
+      <div class="container">
+        <div class="whatwedo-wrap">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="whatwedo-left">
+                <!-- <div class="whatwedo-kicker">WHAT WE DO</div> -->
+                <h2 class="whatwedo-title">Estate Management System (EMS)</h2>
+                <p class="whatwedo-desc" style="font-size: 14px;">is a web-based system that provides all post-allotment services online for Industrial Focal Points developed by PSIEC. Through EMS allottees can apply for various post allotment services online, check the status of dues and make payments along with services of water/sewerage e-payment of Bills. Allottees can also manage all their PSIEC plots from one screen. Moreover, PSIEC can issue different types of communications to the allottee through EMS. All allottees can use the following procedure to avail of any kind of post allotment service.</p>
+               
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="whatwedo-grid">
+                <div class="whatwedo-card whatwedo-card--active">
+                  <div class="whatwedo-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></div>
+                  <div class="whatwedo-card-title">Registration Manual Download</div>
+                  <a class="whatwedo-download-btn" href="assets/registration-manual.pdf" download>Download</a>
+                </div>
+                <div class="whatwedo-card">
+                  <div class="whatwedo-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
+                  <div class="whatwedo-card-title">Registration Video Download</div>
+                  <a class="whatwedo-download-btn" href="assets/registration-video.mp4" download>Download</a>
+                </div>
+                <div class="whatwedo-card">
+                  <div class="whatwedo-icon"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i></div>
+                  <div class="whatwedo-card-title">Payment Procedure Manual Download</div>
+                  <a class="whatwedo-download-btn" href="assets/payment-procedure-manual.pdf" download>Download</a>
+                </div>
+                <div class="whatwedo-card">
+                  <div class="whatwedo-icon"><i class="fa-solid fa-crane" aria-hidden="true"></i></div>
+                  <div class="whatwedo-card-title">Procedure Video Download</div>
+                  <a class="whatwedo-download-btn" href="assets/procedure-video.mp4" download>Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Guides/Manuals Section -->
     <section class="guides-section py-5" id="guides">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="guide-card reveal-up">
-              <h5 class="guide-title">Registration Manual/Video</h5>
-              <p class="guide-subtitle mb-3">Registration Video</p>
-              <a class="guide-video" href="#" aria-label="Play Registration Video">
-                <img src="assets/registraiton-video.png" class="img-fluid" alt="Registration video thumbnail" />
-                <span class="play-icon"><i class="fas fa-play"></i></span>
-              </a>
-              <a class="guide-btn" href="#" download>
-                <span>Registration Manual Download</span>
-                <i class="fas fa-download"></i>
-              </a>
+        <div class="guides-steps">
+          <div class="guides-step guides-step--1">
+            <div class="guides-step-row">
+              <div class="guides-step-icon"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></div>
+              <div class="guides-step-content">
+                <div class="guides-step-badge">Step - 01</div>
+                <h5 class="guides-step-title">Register on EMS</h5>
+                <p class="guides-step-text">Allottee has to Register on EMS and upload the allotment/transfer letter.</p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="guide-card reveal-up reveal-delay-1">
-              <h5 class="guide-title">Online Payment Procedure</h5>
-              <p class="guide-subtitle mb-3">Payment Procedure Video</p>
-              <a class="guide-video" href="#" aria-label="Play Payment Procedure Video">
-                <img src="assets/online-payment-video.png" class="img-fluid" alt="Payment procedure video thumbnail" />
-                <span class="play-icon"><i class="fas fa-play"></i></span>
-              </a>
-              <a class="guide-btn" href="#" download>
-                <span>Payment Procedure Manual Download</span>
-                <i class="fas fa-download"></i>
-              </a>
+
+          <div class="guides-step guides-step--2">
+            <div class="guides-step-row">
+              <div class="guides-step-icon"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i></div>
+              <div class="guides-step-content">
+                <div class="guides-step-badge">Step - 02</div>
+                <h5 class="guides-step-title"> Login Into EMS </h5>
+                <p class="guides-step-text">After verification by the department allottee will get a message for successful 
+                  registration and then she/he will be able to login into EMS using her/his Email ID as login ID and password set by 
+                  her/him at the time of registration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guides-step guides-step--3">
+            <div class="guides-step-row">
+              <div class="guides-step-icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></div>
+              <div class="guides-step-content">
+                <div class="guides-step-badge">Step - 03</div>
+                <h5 class="guides-step-title">Apply Post Allotment</h5>
+                <p class="guides-step-text">Now allottee can apply for any kind of post allotment service through EMS using the User Manual. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guides-step guides-step--4">
+            <div class="guides-step-row">
+              <div class="guides-step-icon"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i></div>
+              <div class="guides-step-content">
+                <div class="guides-step-badge">Step - 04</div>
+                <h5 class="guides-step-title">Submit Documents</h5>
+                <p class="guides-step-text">After applying on EMS for any service, the allottee also has to submit original physical documents at the diary section of PSIEC, Chandigarh. </p>
+              </div>
             </div>
           </div>
         </div>
@@ -238,7 +497,7 @@
 
       <div class="footer-copyright py-3">
         <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2">
-          <p class="mb-0">&copy; Copyright PSIEC - 2025. All Rights Reserved</p>
+          <p class="mb-0">&copy; Copyright PSIEC - 2026. All Rights Reserved</p>
           <p class="mb-0">Designed and Developed by NIC PUNJAB</p>
         </div>
       </div>

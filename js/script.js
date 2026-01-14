@@ -4,6 +4,7 @@
   const slides = Array.from(container.querySelectorAll('.slide'));
   const prev = container.querySelector('.slider-prev');
   const next = container.querySelector('.slider-next');
+  if (slides.length === 0) return;
   let index = 0;
   let timer;
 
@@ -27,6 +28,20 @@
 
   show(index);
   restart();
+})();
+
+// Show ticker carousel only after user scrolls
+(function(){
+  const ticker = document.querySelector('.ticker-section');
+  if (!ticker) return;
+  const body = document.body;
+  const threshold = 60;
+  function update(){
+    if (window.scrollY > threshold) body.classList.add('ticker-visible');
+    else body.classList.remove('ticker-visible');
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 })();
 
 // Sticky header after 20% scroll
@@ -137,4 +152,41 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -10% 0px' });
 
   targets.forEach(el => io.observe(el));
+})();
+
+// About Industrie tabs
+(function(){
+  const root = document.querySelector('.about-industrie');
+  if (!root) return;
+
+  const tabs = Array.from(root.querySelectorAll('.about-industrie-tab'));
+  const panels = Array.from(root.querySelectorAll('.about-industrie-panel'));
+  if (tabs.length === 0 || panels.length === 0) return;
+
+  function activate(key) {
+    tabs.forEach(t => {
+      const active = t.getAttribute('data-about-tab') === key;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    panels.forEach(p => {
+      const active = p.getAttribute('data-about-panel') === key;
+      p.classList.toggle('active', active);
+    });
+  }
+
+  root.addEventListener('click', function(e){
+    const btn = e.target && e.target.closest ? e.target.closest('.about-industrie-tab') : null;
+    if (!btn) return;
+    const key = btn.getAttribute('data-about-tab');
+    if (!key) return;
+    activate(key);
+  });
+
+  const topBtn = root.querySelector('.about-industrie-control-top');
+  if (topBtn) {
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 })();
