@@ -1036,8 +1036,8 @@ body.ticker-visible .ticker-section {
 }
 .ticker-section .ticker-name {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 24px;
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
