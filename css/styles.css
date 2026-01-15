@@ -476,17 +476,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 22px;
 }
 .hero-section .hero-divider {
   width: 1px;
   height: 260px;
   background: rgba(255, 255, 255, 0.35);
+  transform: translateX(-16px);
+  position: relative;
+  right: -43px;
 }
 .hero-section .hero-profile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   color: #FFFFFF;
 }
 .hero-section .hero-profile-img {
@@ -499,7 +502,7 @@ body {
 }
 .hero-section .hero-profile-meta {
   line-height: 1.15;
-  max-width: 180px;
+  max-width: 260px;
 }
 .hero-section .hero-profile-name {
   font-weight: 700;
@@ -512,10 +515,8 @@ body {
   font-weight: 600;
   font-size: 12px;
   opacity: 0.95;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 23px;
+  white-space: normal;
+  line-height: 20px;
     color: #f39a34;
 }
 
