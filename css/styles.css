@@ -220,6 +220,7 @@
 }
 html {
   font-size: calc(16px * var(--user-font-scale, 1));
+  overflow-y: auto;
 }
 
 html, body {
@@ -231,6 +232,7 @@ body {
   color: #2D2E30;
   background-color: #FFFFFF;
   margin: 0;
+  overflow-y: visible;
 }
 
 .header {
@@ -406,6 +408,7 @@ body {
   height: 100vh;
   min-height: 600px;
   color: #FFFFFF;
+  touch-action: pan-y;
 }
 .hero-section .slider-container {
   position: relative;
@@ -417,6 +420,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 .hero-section .slide {
   position: absolute;
@@ -433,6 +437,7 @@ body {
   position: absolute;
   inset: 0;
  background: rgb(0 0 0 / 48%);
+  pointer-events: none;
 }
 .hero-section .hero-text {
   position: relative;
@@ -768,7 +773,7 @@ body {
 .footer-section .footer-info-card i {
   font-size: 27px;
   margin-bottom: 16px;
-  color: #ffa700;
+  color: #ffffff;
 }
 .footer-section .footer-info-card h6 {
   font-weight: 600;
@@ -785,9 +790,10 @@ body {
   filter: brightness(100%);
 }
 .footer-section .footer-copyright {
-  background: #0a0e14;
-  color: #e9eaee;
-  font-size: 13px;
+  background: #ffa700;
+    color: #0a0e14;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .footer-section .footer-top {
