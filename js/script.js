@@ -44,22 +44,6 @@
   update();
 })();
 
-// Sticky header after 20% scroll
-(function(){
-  const header = document.querySelector('.header');
-  if(!header) return;
-  function onScroll(){
-    const threshold = window.innerHeight * 0.2;
-    if(window.scrollY > threshold){
-      header.classList.add('is-sticky');
-    } else {
-      header.classList.remove('is-sticky');
-    }
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-})();
-
 // Font size controls
 (function(){
   const root = document.documentElement;

@@ -232,7 +232,7 @@ body {
   color: #2D2E30;
   background-color: #FFFFFF;
   margin: 0;
-  overflow-y: visible;
+  overflow-y: hidden;
 }
 
 .header {
